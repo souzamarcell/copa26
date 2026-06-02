@@ -517,13 +517,13 @@ const GROUPS = [
     {c:'MEX',n:'México',f:'🇲🇽'},
     {c:'RSA',n:'África do Sul',f:'🇿🇦'},
     {c:'KOR',n:'Coreia do Sul',f:'🇰🇷'},
-    {c:'A4', n:'Europa D*',f:'🏳️'},  // Dinamarca/Mac.Norte/Rep.Tcheca/Irlanda
+    {c:'CZE',n:'Rep. Tcheca',f:'🇨🇿'},
   ]},
   { id:'B', teams:[
     {c:'CAN',n:'Canadá',f:'🇨🇦'},
     {c:'QAT',n:'Qatar',f:'🇶🇦'},
     {c:'SUI',n:'Suíça',f:'🇨🇭'},
-    {c:'B4', n:'Europa A*',f:'🏳️'},  // Itália/Irl.Norte/País de Gales/Bósnia
+    {c:'BIH',n:'Bósnia e Herz.',f:'🇧🇦'},
   ]},
   { id:'C', teams:[
     {c:'BRA',n:'Brasil',f:'🇧🇷'},
@@ -535,11 +535,11 @@ const GROUPS = [
     {c:'USA',n:'Estados Unidos',f:'🇺🇸'},
     {c:'PAR',n:'Paraguai',f:'🇵🇾'},
     {c:'AUS',n:'Austrália',f:'🇦🇺'},
-    {c:'D4', n:'Europa C*',f:'🏳️'},  // Turquia/Romênia/Eslováquia/Kosovo
+    {c:'TUR',n:'Turquia',f:'🇹🇷'},
   ]},
   { id:'E', teams:[
     {c:'GER',n:'Alemanha',f:'🇩🇪'},
-    {c:'CUW',n:'Curaçao',f:'🏳️'},
+    {c:'CUW',n:'Curaçao',f:'🇨🇼'},
     {c:'CIV',n:'Costa do Marfim',f:'🇨🇮'},
     {c:'ECU',n:'Equador',f:'🇪🇨'},
   ]},
@@ -547,7 +547,7 @@ const GROUPS = [
     {c:'NED',n:'Holanda',f:'🇳🇱'},
     {c:'JPN',n:'Japão',f:'🇯🇵'},
     {c:'TUN',n:'Tunísia',f:'🇹🇳'},
-    {c:'F4', n:'Europa B*',f:'🏳️'},  // Ucrânia/Suécia/Polônia/Albânia
+    {c:'SWE',n:'Suécia',f:'🇸🇪'},
   ]},
   { id:'G', teams:[
     {c:'BEL',n:'Bélgica',f:'🇧🇪'},
@@ -565,7 +565,7 @@ const GROUPS = [
     {c:'FRA',n:'França',f:'🇫🇷'},
     {c:'SEN',n:'Senegal',f:'🇸🇳'},
     {c:'NOR',n:'Noruega',f:'🇳🇴'},
-    {c:'I4', n:'Repescagem 2*',f:'🏳️'}, // Iraque/Bolívia/Suriname
+    {c:'IRQ',n:'Iraque',f:'🇮🇶'},
   ]},
   { id:'J', teams:[
     {c:'ARG',n:'Argentina',f:'🇦🇷'},
@@ -577,7 +577,7 @@ const GROUPS = [
     {c:'POR',n:'Portugal',f:'🇵🇹'},
     {c:'UZB',n:'Uzbequistão',f:'🇺🇿'},
     {c:'COL',n:'Colômbia',f:'🇨🇴'},
-    {c:'K4', n:'Repescagem 1*',f:'🏳️'}, // RD Congo/Jamaica/Nova Caledônia
+    {c:'COD',n:'RD Congo',f:'🇨🇩'},
   ]},
   { id:'L', teams:[
     {c:'ENG',n:'Inglaterra',f:'🏴󠁧󠁢󠁥󠁮󠁧󠁿'},
@@ -591,19 +591,19 @@ const GROUPS = [
 const GROUP_MATCHES = {
   A:[
     {t1:'MEX',t2:'RSA',date:'11 Jun',time:'16h',local:'Cidade do México'},
-    {t1:'KOR',t2:'A4', date:'11 Jun',time:'23h',local:'Guadalajara'},
-    {t1:'RSA',t2:'A4', date:'18 Jun',time:'13h',local:'Atlanta'},
+    {t1:'KOR',t2:'CZE', date:'11 Jun',time:'23h',local:'Guadalajara'},
+    {t1:'RSA',t2:'CZE', date:'18 Jun',time:'13h',local:'Atlanta'},
     {t1:'MEX',t2:'KOR',date:'18 Jun',time:'22h',local:'Guadalajara'},
-    {t1:'A4', t2:'MEX',date:'24 Jun',time:'22h',local:'Cidade do México'},
+    {t1:'CZE', t2:'MEX',date:'24 Jun',time:'22h',local:'Cidade do México'},
     {t1:'RSA',t2:'KOR',date:'24 Jun',time:'22h',local:'Monterrey'},
   ],
   B:[
-    {t1:'CAN',t2:'B4', date:'12 Jun',time:'16h',local:'Toronto'},
+    {t1:'CAN',t2:'BIH', date:'12 Jun',time:'16h',local:'Toronto'},
     {t1:'QAT',t2:'SUI',date:'13 Jun',time:'16h',local:'San Francisco'},
-    {t1:'SUI',t2:'B4', date:'18 Jun',time:'16h',local:'Los Angeles'},
+    {t1:'SUI',t2:'BIH', date:'18 Jun',time:'16h',local:'Los Angeles'},
     {t1:'CAN',t2:'QAT',date:'19 Jun',time:'19h',local:'Vancouver'},
     {t1:'SUI',t2:'CAN',date:'24 Jun',time:'16h',local:'Vancouver'},
-    {t1:'B4', t2:'QAT',date:'24 Jun',time:'16h',local:'Seattle'},
+    {t1:'BIH', t2:'QAT',date:'24 Jun',time:'16h',local:'Seattle'},
   ],
   C:[
     {t1:'BRA',t2:'MAR',date:'13 Jun',time:'19h',local:'Nova York/NJ'},
@@ -614,11 +614,11 @@ const GROUP_MATCHES = {
     {t1:'MAR',t2:'HTI',date:'24 Jun',time:'19h',local:'Atlanta'},
   ],
   D:[
-    {t1:'AUS',t2:'D4', date:'13 Jun',time:'1h', local:'Vancouver'},
+    {t1:'AUS',t2:'TUR', date:'13 Jun',time:'1h', local:'Vancouver'},
     {t1:'USA',t2:'PAR',date:'12 Jun',time:'22h',local:'Los Angeles'},
-    {t1:'D4', t2:'PAR',date:'19 Jun',time:'1h', local:'San Francisco'},
+    {t1:'TUR', t2:'PAR',date:'19 Jun',time:'1h', local:'San Francisco'},
     {t1:'USA',t2:'AUS',date:'19 Jun',time:'16h',local:'Seattle'},
-    {t1:'D4', t2:'USA',date:'25 Jun',time:'23h',local:'Los Angeles'},
+    {t1:'TUR', t2:'USA',date:'25 Jun',time:'23h',local:'Los Angeles'},
     {t1:'PAR',t2:'AUS',date:'25 Jun',time:'23h',local:'San Francisco'},
   ],
   E:[
@@ -631,10 +631,10 @@ const GROUP_MATCHES = {
   ],
   F:[
     {t1:'NED',t2:'JPN',date:'14 Jun',time:'17h',local:'Dallas'},
-    {t1:'F4', t2:'TUN',date:'14 Jun',time:'23h',local:'Monterrey'},
-    {t1:'NED',t2:'F4', date:'20 Jun',time:'14h',local:'Houston'},
+    {t1:'SWE', t2:'TUN',date:'14 Jun',time:'23h',local:'Monterrey'},
+    {t1:'NED',t2:'SWE', date:'20 Jun',time:'14h',local:'Houston'},
     {t1:'TUN',t2:'JPN',date:'21 Jun',time:'1h', local:'Monterrey'},
-    {t1:'JPN',t2:'F4', date:'25 Jun',time:'20h',local:'Dallas'},
+    {t1:'JPN',t2:'SWE', date:'25 Jun',time:'20h',local:'Dallas'},
     {t1:'TUN',t2:'NED',date:'25 Jun',time:'20h',local:'Kansas City'},
   ],
   G:[
@@ -655,11 +655,11 @@ const GROUP_MATCHES = {
   ],
   I:[
     {t1:'FRA',t2:'SEN',date:'16 Jun',time:'16h',local:'Nova York/NJ'},
-    {t1:'I4', t2:'NOR',date:'16 Jun',time:'19h',local:'Boston'},
-    {t1:'FRA',t2:'I4', date:'22 Jun',time:'18h',local:'Filadélfia'},
+    {t1:'IRQ', t2:'NOR',date:'16 Jun',time:'19h',local:'Boston'},
+    {t1:'FRA',t2:'IRQ', date:'22 Jun',time:'18h',local:'Filadélfia'},
     {t1:'NOR',t2:'SEN',date:'22 Jun',time:'21h',local:'Nova York/NJ'},
     {t1:'NOR',t2:'FRA',date:'26 Jun',time:'16h',local:'Boston'},
-    {t1:'SEN',t2:'I4', date:'26 Jun',time:'16h',local:'Toronto'},
+    {t1:'SEN',t2:'IRQ', date:'26 Jun',time:'16h',local:'Toronto'},
   ],
   J:[
     {t1:'ARG',t2:'ALG',date:'16 Jun',time:'14h',local:'Kansas City'},
@@ -670,12 +670,12 @@ const GROUP_MATCHES = {
     {t1:'ALG',t2:'AUT',date:'27 Jun',time:'23h',local:'Kansas City'},
   ],
   K:[
-    {t1:'POR',t2:'K4', date:'17 Jun',time:'14h',local:'Houston'},
+    {t1:'POR',t2:'COD', date:'17 Jun',time:'14h',local:'Houston'},
     {t1:'UZB',t2:'COL',date:'17 Jun',time:'23h',local:'Cidade do México'},
     {t1:'POR',t2:'UZB',date:'23 Jun',time:'14h',local:'Houston'},
-    {t1:'COL',t2:'K4', date:'23 Jun',time:'23h',local:'Guadalajara'},
+    {t1:'COL',t2:'COD', date:'23 Jun',time:'23h',local:'Guadalajara'},
     {t1:'COL',t2:'POR',date:'27 Jun',time:'20h30',local:'Miami'},
-    {t1:'K4', t2:'UZB',date:'27 Jun',time:'20h30',local:'Atlanta'},
+    {t1:'COD', t2:'UZB',date:'27 Jun',time:'20h30',local:'Atlanta'},
   ],
   L:[
     {t1:'ENG',t2:'CRO',date:'17 Jun',time:'17h',local:'Dallas'},
@@ -1164,7 +1164,8 @@ function clearScore(){
 
 function findKO(id){
   const rnd=id.split('_')[0];
-  return (state.ko[rnd]||[]).find(m=>m.id===id)||null;
+  const key=rnd==='fin'?'final':rnd;
+  return (state.ko[key]||[]).find(m=>m.id===id)||null;
 }
 
 // ═══════════════════════════════════════════════
